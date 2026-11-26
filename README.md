@@ -177,3 +177,7 @@ Ciência da Computação (UDF) · Técnico em Eletrônica (IFB) · Desenvolvedor
 ## 📄 Licença
 
 Distribuído sob a licença [MIT](LICENSE).
+
+## Site
+<img width="1188" height="1188" alt="qr-code" src="https://github.com/user-attachments/assets/246f13f7-d3b9-4ac0-80c8-f0053672404b" />
+
