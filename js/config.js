@@ -24,8 +24,8 @@ const ME={
   github:"https://github.com/matheusgg18",
   photo:"https://avatars.githubusercontent.com/u/172650203?v=4", // sua foto. Quer outra? Salve em img/foto.jpg e troque por "img/foto.jpg"
   instagram:"matheus1520_",       // seu @ sem o @
-  whatsapp:"",                    // DDI+DDD+número, só dígitos. Ex.: "5561999999999"
-  email:"",                       // ex.: "voce@email.com"
+  whatsapp:"556199447876",                    // DDI+DDD+número, só dígitos. Ex.: "5561999999999"
+  email:"math147969@gmail.com",                       // ex.: "voce@email.com"
   linkedin:"https://www.linkedin.com/in/matheus-teixeira-6b305131b/",
   devto:"https://dev.to/matheus18",
   formEndpoint:""  // endereço do Formspree (ou similar) para o formulário enviar por e-mail. Vazio = abre WhatsApp/e-mail
