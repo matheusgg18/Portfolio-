@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  PORTFÓLIO · MATHEUS TEIXEIRA · tema Vice City (GTA VI)
+  Estrutura editorial inspirada no template "Mono Agency Portfolio".
+  100% front-end: HTML + CSS + JavaScript puro, sem build.
+
+  ARQUIVOS:
+    index.html     -> "casca" da página (menu e rodapé)
+    css/style.css  -> visual: cores, fontes, layout, animações
+    js/config.js   -> SEU CONTEÚDO: contatos, projetos, trajetória...
+    js/utils.js    -> funções auxiliares
+    js/ui.js       -> menu em tela cheia e rodapé
+    js/scene.js    -> cenário (palmeiras e skyline)
+    js/effects.js  -> animações (digitação, slider, scroll)
+    js/pages.js    -> o HTML de cada página do site
+    js/main.js     -> roteador que liga tudo
+    img/           -> imagens dos projetos e sua foto
+
+  As "páginas" (#home, #portfolio, #projeto-..., #diario, #contato)
+  são desenhadas pelo js/pages.js usando o conteúdo do js/config.js.
+  ============================================================
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matheus Teixeira — Desenvolvedor Web</title>
+<meta name="description" content="Portfólio de Matheus Teixeira: projetos, formação e trajetória em desenvolvimento web.">
+<meta name="theme-color" content="#0a0512">
+<!-- Pré-visualização quando o link é compartilhado (WhatsApp, LinkedIn...). Para ter imagem, salve img/preview.png e descomente a linha og:image -->
+<meta property="og:title" content="Matheus Teixeira — Portfólio">
+<meta property="og:description" content="Projetos, formação e trajetória em desenvolvimento web.">
+<meta property="og:type" content="website">
+<!-- <meta property="og:image" content="img/preview.png"> -->
+<!-- Ícone da aba (emoji de palmeira, sem precisar de arquivo) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B4%3C/text%3E%3C/svg%3E">
+<!-- Fontes: Inter (texto) e Anton (destaques). Têm fontes de reserva se ficarem offline -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cabeçalho fixo: logo + botão do menu em tela cheia -->
+<header id="top">
+  <a class="brand" href="#home"><b>MT</b> · Vice</a>
+  <button id="menuBtn" aria-label="Abrir menu"><span>Menu</span><i></i></button>
+</header>
+
+<!-- Menu em tela cheia (o JS preenche os links) -->
+<div id="overlay"><nav id="ovNav"></nav><div id="ovFoot"></div></div>
+
+<!-- Aqui o JS desenha a página atual -->
+<main id="app"></main>
+
+<footer id="foot"></footer>
+
+<!-- A ORDEM IMPORTA: o conteúdo (config) vem primeiro, o roteador (main) por último -->
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
